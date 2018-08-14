@@ -17,13 +17,13 @@ class Marksheet:
         return percentage    
         
     def findDivision(self):
-        #calckate the division on the basis of the percentage
+        #calculate the division on the basis of the percentage
         percentage = self.calculatePercentage()
-        if percentage > 80:
+        if percentage >= 80:
             print("Congratulations! You got Distinction.")
-        elif percentage < 80 and percentage > 60:
+        elif percentage < 80 and percentage >=60:
             print("Congratulations! You got First Division.")
-        elif percentage < 60 and percentage > 50:
+        elif percentage < 60 and percentage >= 50:
             print("Congratulations! You got Second Division.")
         elif percentage > 50:
             print("Congratulations! You got Third Division.")
